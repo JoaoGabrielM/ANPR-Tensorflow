@@ -31,6 +31,8 @@ import multiprocessing
 import os
 import time
 
+os.environ['FOR_DISABLE_CONSOLE_CTRL_HANDLER'] = '1'
+
 import cv2
 import numpy
 import tensorflow as tf
