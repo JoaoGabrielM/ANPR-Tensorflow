@@ -67,7 +67,7 @@ Usage is as follows:
 
 1. (optional but recommended) `./extractbgs.py SUN397.tar.gz`: Extract ~3GB of background images from the [SUN database](http://groups.csail.mit.edu/vision/SUN/) into `bgs/` (`bgs/` must have only enumerate images in jpg format). The tar file (36GB) can be [downloaded here](http://vision.princeton.edu/projects/2010/SUN/SUN397.tar.gz). This step may take a while as it will extract 108,634 images.
 
-2. `./gen.py`: Locate variable `generate_amount ` and set the number you want (default 100), it will safe the test set images in `test/` (`test/`must be empty). This step requires a `.ttf` files to be in the `fonts/` directory.
+2. `./gen.py`: Locate variable `generate_amount ` and set the number you want (default 50,000), it will safe the test set images in `test/` (`test/`must be empty). This step requires a `.ttf` files to be in the `fonts/` directory.
 
 3. `./train.py`: Train the model. A **GPU** is recommended for this step. It will take around 100,000 batches to converge. When you're satisfied that the network has learned enough press Ctrl+C once and the process will create a `CPUweights.npz` file and write the weights (ypu can run several time your training and it will keep learning from it stop).
 
